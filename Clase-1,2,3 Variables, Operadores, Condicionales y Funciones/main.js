@@ -145,5 +145,27 @@ console.log(ternario)
 /* Concatenación */
 
 const cinco = "5"
-console.log("5 no es esto ${cinco}")
-console.log("5 no es esto" + cinco)
+console.log(`5 no es esto ${cinco}`)
+console.log(`5 no es esto` + cinco)
+
+                                    /* Funciones */
+
+/* Old School Funtion */
+
+function saludar(name){
+    return console.log(`Hola ${name} `)
+}
+
+saludar("luis") 
+saludar("Esteban") 
+saludar("Rosa") 
+
+/* Ecma 6 en adelante */
+// Arrow Functions
+
+const chau = (name, lastname) => {
+    return console.log(`Hola ${name} ${lastname} `)
+} 
+chau(`agustin`, `pereyra`)
+
+
