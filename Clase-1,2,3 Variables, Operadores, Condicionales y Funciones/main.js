@@ -168,4 +168,19 @@ const chau = (name, lastname) => {
 } 
 chau(`agustin`, `pereyra`)
 
+/* Call Back (Devolver varias funciones) */
+
+const despedida = message => {
+    let result;
+    return result = message
+}
+
+const presentacion = (name, message) => {
+    let part1 = saludar(name)
+    let part2 = despedida(message)
+
+    return `${part1} ${part2}`
+}
+
+presentacion(`Luis`, `Hasta luego, vuelva pronto`) 
 
