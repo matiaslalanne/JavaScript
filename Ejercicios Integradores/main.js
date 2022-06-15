@@ -151,38 +151,54 @@ añadir()
 
 
 //! Funcion de evaluar si se repiten (NO OK)
-/* evaluar = () => {
-    let peliNueva = {ID: 3, Titulo:"Toy Story" }
-    for(item = 0; item < peliculas.length; peliculas++){
-        if(peliNueva === peliculas) {
-            return console.log("La Pelicula esta repetida")
-            break
-        }
-        else{
-           console.log("La peli no se repite")
-        }
+
+peliAgregar = [
+    pelinueva = {
+        ID: 3,
+        Titulo: "Nemo"
     }
-} 
+]
 
-evaluar() */
+evaluar = () => {
+    if(peliculas[0].Titulo === peliAgregar[0].Titulo){
+        console.log("La pelicula ya fue agregada");
+    }
+    else if(peliculas[1].Titulo === peliAgregar[0].Titulo){
+        console.log("La pelicula ya fue agregada");
+    }
+    else{
+        peliculas.push(pelinueva)
+    }
+}
 
-//? La forma de acceder a un Key dentro de un objeto dentro de un array es
-//? peliculas[1].Titulo
+evaluar()
 
-ordenarPelis = peliculas[0].Titulo + peliculas[1].Titulo;
 
-console.log(ordenarPelis)
+//! Crear una función que ordene las películas por Título y por ID
 
-let peliPrueba = {ID: 2, Titulo: "Nemo"}
+ordenTitulo = [
+    peliculas[0].Titulo,
+    peliculas[1].Titulo,
+    peliculas[2].Titulo,
+]
 
-console.log(peliPrueba.ID);
+funcionOrdenTitulo = () => {
+    ordenTitulo.sort();
+    console.log(ordenTitulo);
+}
 
-console.log(peliculas);
+funcionOrdenTitulo()
 
-peliculas.push(peliPrueba)
+ordenID = [
+    peliculas[0].ID,
+    peliculas[1].ID,
+    peliculas[2].ID,
+]
 
-console.log(peliculas);
+funcionOrdenID = () => {
+    ordenID.sort();
+    console.log(ordenID);
+}
 
-console.log(peliculas[2].Titulo);
+funcionOrdenID()
 
-console.log(peliculas[2].Titulo === peliculas[2].Titulo);
