@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Events</title>
+    
+</head>
+<body>
+    <h1 onmouseover={funtionOver()}>Eventos DOM Input</h1>
+
+    <div>
+        <h2>Select onchange</h2>
+        <select onchange={mySelect()} id="mySelect">
+            <option value="Audi">Audi</option>
+            <option value="Toyota">Toyota</option>
+            <option value="Chevrolet">Chevrolet</option>
+        </select>
+        <span>Tu auto seleccionado es :</span>
+        <span id="resultado"></span>
+    </div>
+
+    <div>
+        <h2>Input on change</h2>
+        <input placeholder="Escribe aca" type="text" id="input" onchange={input()}>
+    </div>
+
+    <div>
+        <h2>Helados</h2>
+        <select class="helado" name="helado" id="helado">
+            <option value="Frutilla">Frutilla</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Vainilla">Vainilla</option>
+        </select>
+        <span>Tu sabor seleccionado es :</span>
+        <span class="resultado"></span>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
