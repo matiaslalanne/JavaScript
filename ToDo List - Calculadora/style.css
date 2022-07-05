@@ -1,0 +1,10 @@
+body{
+    width: 300px;
+    height: 844px;
+}
+
+button{
+    color: aqua;
+    background-color: black;
+    animation-fill-mode: forwards;
+}
