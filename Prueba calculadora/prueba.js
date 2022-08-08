@@ -1,7 +1,7 @@
 window.addEventListener("load", ()=>{ /* Escuchamos cuando se carga el documento */
     
     /* Creamos dos constantes y nos guardamos los elementos que necesitamos */
-    const display = document.querySelector(".calculator-display")
+    const display = document.querySelector(".resultado")
     const keypadButtons = document.getElementsByClassName("keypad-button");
 
     /* Creamos otra constante para convertir el HTMLCollection a Array */
@@ -26,7 +26,7 @@ function calculadora(button, display) {
         case "=":
             calcular(display)
             break;
-        case "ç":
+        case "⟳":
             deshacer(display)
             break;
     
@@ -53,6 +53,11 @@ function borrar(display){
 }
 
 function deshacer(display){
-    display.innerHTML = keypadButtonsArray.pop()
+    display.innerHTML = keypadButtonsArray.slice[-1]
 }
 
+/* function coloresDisplay(display){
+    if display.innerHTML === "+"{
+        
+    }
+} */

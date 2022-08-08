@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@300&family=Roboto:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 506px;
+    width: 425px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+
+}
+
+.calculadora {
+
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid grey; */
+    font-size: 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+.display{
+    display: flex;
+    height: 40%;
+    width: 100%;
+    background-color: #22252D;
+    color: #FFFFFF;
+    flex-direction: column;
+}
+
+.modoOscuro{
+    height: 50%;
+    width: 100%;
+}
+
+.resultado{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items:flex-end;
+    justify-content: right;
+    
+
+}
+
+.botones{
+    display: flex;
+    height: 60%;
+    width: 100%;
+    background-color: #292D36;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+.botones-keypad{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content:space-evenly;
+    justify-items:center;
+
+}
+
+.keypad-button{
+    background-color: #272B33;
+    width: 21%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    color: #F1F2F3;
+    font-size: 25px;
+    margin: auto;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.keypad-button:hover{
+    filter: brightness(95%);
+    transition: filter .25s;
+}
+
+.keypad-button.verde{
+    color: #57E0BF;
+}
+
+
+.keypad-button.rojo{
+    color: #D76061;
+}
+
