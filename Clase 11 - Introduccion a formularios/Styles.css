@@ -1,0 +1,18 @@
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    background: red;
+}
+
+.cuadrado.extra{
+    background-color: yellow;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.9rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
